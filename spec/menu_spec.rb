@@ -16,5 +16,9 @@ describe 'menu' do
   it 'should be able to display an items price' do
     expect(menu.price_list['Tea']).to eq 3.65
   end
+
+  it 'should display all items available' do
+    expect(menu.display_price_list).to include ('Tea: 3.65')
+  end
   
 end
