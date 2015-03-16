@@ -6,4 +6,8 @@ attr_reader :items
     @items = []
   end
 
+  def add(item, quantity)
+    items.push({item: item, quantity: quantity})
+  end
+
 end
