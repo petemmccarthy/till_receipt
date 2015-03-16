@@ -1,7 +1,9 @@
 class Order
 
-  def items
-    @items = {}
+attr_reader :items
+
+  def initialize
+    @items = []
   end
 
 end
