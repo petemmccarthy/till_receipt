@@ -2,7 +2,7 @@ require 'menu'
 
 describe 'menu' do
 
-  let (:menu) {Menu.new}
+  let (:menu) { Class.new { extend Menu } }
   
   it 'should read the prices from the json file' do
     expect(menu.price_list).to be_instance_of Hash
@@ -20,9 +20,5 @@ describe 'menu' do
   it 'should have a price for each item' do
     expect(menu.price_list.keys.length).to eq(menu.price_list.values.length)
   end
-
-  # it 'should display all items available' do
-  #   expect(menu.display_price_list).to include ('Tea: 3.65')
-  # end
   
 end
