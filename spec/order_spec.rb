@@ -14,7 +14,7 @@ describe 'order' do
     expect(new_order.items.first[:quantity]).to eq (2)  
   end
 
-  it 'can have multiple items and a quantities' do
+  it 'can have multiple items and quantities' do
     new_order.add('Tea', 2)
     new_order.add('Cafe Latte', 3)
     expect(new_order.items.last[:item]).to eq('Cafe Latte')

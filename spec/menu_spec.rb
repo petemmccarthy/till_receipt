@@ -6,7 +6,6 @@ describe 'menu' do
   
   it 'should read the prices from the json file' do
     expect(menu.price_list).to be_instance_of Hash
-    expect(menu.price_list).not_to be_empty
   end
 
   it 'should not be empty' do
