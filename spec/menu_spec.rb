@@ -9,6 +9,10 @@ describe 'menu' do
     expect(menu.price_list).not_to be_empty
   end
 
+  it 'should not be empty' do
+    expect(menu.price_list).not_to be_empty
+  end
+
   it 'should be able to display an item' do
     expect(menu.price_list.keys).to include('Tea')
   end
